@@ -12,6 +12,7 @@ import Reports from './pages/Reports';
 import Settings from './pages/Settings';
 import Profile from './pages/Profile';
 import Notifications from './pages/Notifications';
+import Reviews from './pages/Reviews';
 
 function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
@@ -37,6 +38,7 @@ function App() {
           <Route path="deals" element={<Deals />} />
           <Route path="documents" element={<Documents />} />
           <Route path="reports" element={<Reports />} />
+          <Route path="reviews" element={<Reviews />} />
           <Route path="notifications" element={<Notifications />} />
           <Route path="settings" element={<Settings />} />
           <Route path="profile" element={<Profile />} />

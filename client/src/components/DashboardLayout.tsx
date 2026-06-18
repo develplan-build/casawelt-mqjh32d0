@@ -3,7 +3,7 @@ import { Outlet, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { 
   LayoutDashboard, Users, Home, Calendar, Briefcase, 
   FileText, BarChart2, Settings, Bell, Menu, X, 
-  LogOut, User, Moon, Sun, ChevronDown
+  LogOut, User, Moon, Sun, ChevronDown, Star
 } from 'lucide-react';
 import { HAS_BACKEND } from '../config';
 
@@ -27,6 +27,7 @@ export default function DashboardLayout({ theme, toggleTheme }: LayoutProps) {
     { path: '/app/deals', icon: <Briefcase size={20} />, label: 'Pipeline' },
     { path: '/app/documents', icon: <FileText size={20} />, label: 'Documenti' },
     { path: '/app/reports', icon: <BarChart2 size={20} />, label: 'Report' },
+    { path: '/app/reviews', icon: <Star size={20} />, label: 'Recensioni' },
     { path: '/app/notifications', icon: <Bell size={20} />, label: 'Notifiche' },
     { path: '/app/settings', icon: <Settings size={20} />, label: 'Impostazioni' },
   ];
